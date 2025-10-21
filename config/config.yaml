@@ -1,0 +1,27 @@
+testing:
+  batch_size: 8
+  bce_weight: 0.5236582380671724
+  dropout: 0.47303267888914247
+  img_size: 192
+  model_path: D:\Virtual Environments\PyTorch\Projects\unet\outputs\best_model_trial_1.pth
+  project_name: unet_optimization
+  run_name: test_best_model
+  test_images_dir: D:\Deep Learning\Datasets\crack500\test\images
+  test_masks_dir: D:\Deep Learning\Datasets\crack500\test\masks
+training:
+  batch_size: 8
+  bilinear: true
+  epochs: 10
+  img_size: 192
+  in_channels: 3
+  n_trials: 2
+  out_channels: 1
+  output_dir: D:\Virtual Environments\PyTorch\Projects\unet\outputs
+  seed: 42
+  patience: 7
+  storage: sqlite:///outputs/study.db
+  study_name: unet_optimization
+  train_images_dir: D:\Deep Learning\Datasets\crack500\train\images
+  train_masks_dir: D:\Deep Learning\Datasets\crack500\train\masks
+  val_images_dir: D:\Deep Learning\Datasets\crack500\val\images
+  val_masks_dir: D:\Deep Learning\Datasets\crack500\val\masks
